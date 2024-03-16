@@ -16,7 +16,7 @@ export const TimeLine = observer(() => {
           return <TimeFrameView key={element.id} element={element} />;
         })}
         <div
-          className="w-[2px] bg-red-400 absolute top-0 bottom-0 z-20"
+          className="w-[2px] primary absolute top-0 bottom-0 z-20"
           style={{
             left: `${percentOfCurrentTime}%`,
           }}

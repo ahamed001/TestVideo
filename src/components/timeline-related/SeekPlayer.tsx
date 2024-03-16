@@ -24,7 +24,6 @@ const MARKINGS = [
 
 export type SeekPlayerProps = {};
 
-
 export const SeekPlayer = observer((_props: SeekPlayerProps) => {
   const store = useContext(StoreContext);
   const Icon = store.playing ? MdPause : MdPlayArrow;

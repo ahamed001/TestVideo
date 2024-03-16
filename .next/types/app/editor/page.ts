@@ -1,4 +1,4 @@
-// File: D:\TestVideo\src\app\editor\page.tsx
+// File: D:\Irfan\EFFE\ReelsMaker\TestVideo\src\app\editor\page.tsx
 import * as entry from '../../../../src/app/editor/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

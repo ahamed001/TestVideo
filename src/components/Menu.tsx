@@ -3,16 +3,17 @@ import React from "react";
 import { StoreContext } from "@/store";
 import { observer } from "mobx-react";
 import {
-  MdDownload,
-  MdVideoLibrary,
-  MdImage,
-  MdTransform,
   MdTitle,
-  MdAudiotrack,
+  MdOutlineAudioFile,
+  MdPhotoFilter,
+  MdAnimation,
   MdOutlineFormatColorFill,
-  MdMovieFilter,
   MdCloudUpload,
 } from "react-icons/md";
+import { TfiExport } from "react-icons/tfi";
+import { RiFolderLine } from "react-icons/ri";
+import { LuImagePlus } from "react-icons/lu";
+
 import { FaShapes } from "react-icons/fa6";
 import { Store } from "@/store/Store";
 
@@ -53,22 +54,29 @@ export const Menu = observer(() => {
 
 const MENU_OPTIONS = [
   {
+    name: "Export",
+    icon: TfiExport,
+    action: (store: Store) => {
+      store.setSelectedMenuOption("Export");
+    },
+  },
+  {
     name: "Video",
-    icon: MdVideoLibrary,
+    icon: RiFolderLine,
     action: (store: Store) => {
       store.setSelectedMenuOption("Video");
     },
   },
   {
     name: "Audio",
-    icon: MdAudiotrack,
+    icon: MdOutlineAudioFile,
     action: (store: Store) => {
       store.setSelectedMenuOption("Audio");
     },
   },
   {
     name: "Image",
-    icon: MdImage,
+    icon: LuImagePlus,
     action: (store: Store) => {
       store.setSelectedMenuOption("Image");
     },
@@ -89,14 +97,14 @@ const MENU_OPTIONS = [
   },
   {
     name: "Animation",
-    icon: MdTransform,
+    icon: MdAnimation,
     action: (store: Store) => {
       store.setSelectedMenuOption("Animation");
     },
   },
   {
     name: "Effect",
-    icon: MdMovieFilter,
+    icon: MdPhotoFilter,
     action: (store: Store) => {
       store.setSelectedMenuOption("Effect");
     },
@@ -106,13 +114,6 @@ const MENU_OPTIONS = [
     icon: MdOutlineFormatColorFill,
     action: (store: Store) => {
       store.setSelectedMenuOption("Fill");
-    },
-  },
-  {
-    name: "Export",
-    icon: MdDownload,
-    action: (store: Store) => {
-      store.setSelectedMenuOption("Export");
     },
   },
   {
