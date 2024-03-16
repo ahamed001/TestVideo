@@ -131,6 +131,14 @@
       ],
       "async": false
     },
+    "D:\\Irfan\\EFFE\\ReelsMaker\\TestVideo\\src\\app\\editor\\page.tsx": {
+      "id": "(app-client)/./src/app/editor/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/editor/page:static/chunks/app/editor/page.js"
+      ],
+      "async": false
+    },
     "D:\\Irfan\\EFFE\\ReelsMaker\\TestVideo\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
       "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
       "name": "*",
@@ -146,21 +154,12 @@
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
-    },
-    "D:\\Irfan\\EFFE\\ReelsMaker\\TestVideo\\src\\app\\editor\\page.tsx": {
-      "id": "(app-client)/./src/app/editor/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/editor/page:static/chunks/app/editor/page.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
-    "D:\\Irfan\\EFFE\\ReelsMaker\\TestVideo\\src\\app\\page": [],
+    "D:\\Irfan\\EFFE\\ReelsMaker\\TestVideo\\src\\app\\editor\\page": [],
     "D:\\Irfan\\EFFE\\ReelsMaker\\TestVideo\\src\\app\\layout": [
       "static/css/app/layout.css"
-    ],
-    "D:\\Irfan\\EFFE\\ReelsMaker\\TestVideo\\src\\app\\editor\\page": []
+    ]
   }
 }

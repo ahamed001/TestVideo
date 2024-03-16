@@ -19,9 +19,8 @@ export const TimeFrameView = observer((props: { element: EditorElement }) => {
         store.setSelectedElement(element);
       }}
       key={element.id}
-      className={`relative width-full h-[25px] my-2 ${
-        isSelected ? "border-2 border-indigo-600 bg-slate-200" : ""
-      }`}
+      className={`relative width-full h-10 my-2 ${isSelected ? "border-2 border-indigo-600 bg-slate-200" : ""
+        }`}
     >
       <DragableView
         className="z-10"
@@ -35,7 +34,7 @@ export const TimeFrameView = observer((props: { element: EditorElement }) => {
         }}
       >
         <div
-          className={`bg-white border-2 border-blue-400 w-[10px] h-[10px] mt-[calc(25px/2)] translate-y-[-50%] transform translate-x-[-50%] ${disabledCursor}`}
+          className={`bg-blue-400 border-2 border-blue-400 w-[5px] h-10 mt-[calc(25px/2)] translate-y-[-39%] transform translate-x-[-50%] ${disabledCursor}`}
         ></div>
       </DragableView>
 
@@ -44,11 +43,10 @@ export const TimeFrameView = observer((props: { element: EditorElement }) => {
         value={element.timeFrame.start}
         disabled={disabled}
         style={{
-          width: `${
-            ((element.timeFrame.end - element.timeFrame.start) /
-              store.maxTime) *
+          width: `${((element.timeFrame.end - element.timeFrame.start) /
+            store.maxTime) *
             100
-          }%`,
+            }%`,
         }}
         total={store.maxTime}
         onChange={(value) => {
@@ -67,7 +65,7 @@ export const TimeFrameView = observer((props: { element: EditorElement }) => {
       </DragableView>
       <DragableView
         className="z-10"
-        disabled={disabled}
+        // disabled={disabled}
         value={element.timeFrame.end}
         total={store.maxTime}
         onChange={(value) => {
@@ -77,7 +75,7 @@ export const TimeFrameView = observer((props: { element: EditorElement }) => {
         }}
       >
         <div
-          className={`bg-white border-2 border-blue-400 w-[10px] h-[10px] mt-[calc(25px/2)] translate-y-[-50%] transform translate-x-[-50%] ${disabledCursor}`}
+          className={`bg-blue-400 border-2 border-blue-400 w-[5px] h-10 mt-[calc(25px/2)] translate-y-[-39%] transform translate-x-[-50%] ${disabledCursor}`}
         ></div>
       </DragableView>
     </div>
