@@ -26,7 +26,7 @@ export const ShapesResource = observer(({ image, index }: ShapesResourceProps) =
   return (
     <div className="rounded-lg overflow-hidden items-center bg-slate-800 m-[15px] flex flex-col relative">
       <button
-        className="hover:bg-[#EA2127] bg-[rgba(0,0,0,.25)] rounded z-10 text-white font-bold py-1 absolute text-lg bottom-2 right-2"
+        className="hover:bg-[#EA2127] bg-[rgba(0,0,0,.25)] rounded-full z-10 text-white font-bold p-1 absolute text-lg bottom-2 right-2"
         onClick={() => store.addImage(index)}
       >
         <MdAdd size="25" />

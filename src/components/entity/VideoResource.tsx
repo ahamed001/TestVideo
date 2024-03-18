@@ -22,7 +22,7 @@ export const VideoResource = observer(
           {formatedVideoLength}
         </div> */}
         <button
-          className="hover:bg-[#EA2127] bg-[rgba(0,0,0,.25)] rounded z-10 text-white font-bold py-1 absolute text-lg bottom-2 right-2"
+          className="hover:bg-[#EA2127] bg-[rgba(0,0,0,.25)] rounded-full z-10 text-white font-bold p-1 absolute text-lg bottom-2 right-2"
           onClick={() => store.addVideo(index)}
         >
           <MdAdd size="25" />

@@ -2,7 +2,7 @@ import React from 'react';
 import { MdAdd } from 'react-icons/md';
 import { observer } from 'mobx-react';
 import { StoreContext } from "@/store";
-import { formatTimeToMinSec } from '@/utils'; 
+import { formatTimeToMinSec } from '@/utils';
 
 type UploadResourceProps = {
   resource: string;
@@ -56,7 +56,7 @@ export const UploadResource = observer(
           {type === 'video' ? formattedLength : `${resolution.w}x${resolution.h}`}
         </div>
         <button
-          className="hover:bg-[#00a0f5] bg-[rgba(0,0,0,.25)] rounded z-10 text-white font-bold py-1 absolute text-lg bottom-2 right-2"
+          className="hover:bg-[#EA2127] bg-[rgba(0,0,0,.25)] rounded-full z-10 text-white font-bold p-1 absolute text-lg bottom-2 right-2"
           onClick={addResource}
         >
           <MdAdd size="25" />
